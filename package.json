@@ -1,0 +1,19 @@
+{
+  "name": "design-patterns-implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:GabrielDVpereira/design-patterns-implementation.git",
+  "author": "gabrieldvpereira <gdavi.gd@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.2"
+  },
+  "scripts": {
+    "test": "jest", 
+    "build": "tsc --outDir build"
+  },
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}
