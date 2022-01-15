@@ -17,7 +17,7 @@ function clientCode(){
      const s1 = Singleton.getInstance(); 
      const s2 = Singleton.getInstance(); 
 
-    if(s1 === s1){
+    if(s1 === s2){
         console.log('singleton works!')
         return; 
     }
