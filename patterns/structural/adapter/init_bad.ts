@@ -1,5 +1,5 @@
-import { EmailValidatorAdapter } from './emailValidator'; 
-import { EmailValidator } from './validator'
+import * as validator from 'email-validator'; 
+
 
 type LoginCredentials = {
     email: string, 
@@ -13,26 +13,22 @@ type SignUpCredentials = {
 }
 
 class Auth {
-    constructor(
-        private readonly emailValidator: EmailValidator
-    ){}
-
+  
    async login(credentials: LoginCredentials ): Promise<void> {
-        const isEmailValid = this.emailValidator.validate(credentials.email);
+        const isEmailValid = validator.validate(credentials.email); // Deprecado
         if(isEmailValid){
             console.log('login')
         } 
    }
 
    async signup(credentials: SignUpCredentials): Promise<void> {
-        const isEmailValid = this.emailValidator.validate(credentials.email);
+        const isEmailValid = validator.validate(credentials.email); // Deprecado
         if(isEmailValid){
             console.log('signup')
         } 
    }
 }
 
-const validator = new EmailValidatorAdapter(); 
-const app = new Auth(validator); 
+const app = new Auth(); 
 
 // ... some auth logic stuff
