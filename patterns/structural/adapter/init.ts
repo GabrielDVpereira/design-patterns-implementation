@@ -12,7 +12,7 @@ type SignUpCredentials = {
     passwordConfirmation: string, 
 }
 
-class Application {
+class Auth {
     constructor(
         private readonly emailValidator: EmailValidator
     ){}
@@ -33,6 +33,6 @@ class Application {
 }
 
 const validator = new EmailValidatorAdapter(); 
-const app = new Application(validator); 
+const app = new Auth(validator); 
 
 // ... some auth logic stuff
