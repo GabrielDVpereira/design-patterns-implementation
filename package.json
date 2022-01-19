@@ -10,10 +10,11 @@
     "ts-jest": "^27.1.2"
   },
   "scripts": {
-    "test": "jest", 
+    "test": "jest",
     "build": "tsc --outDir build"
   },
   "dependencies": {
+    "email-validator": "^2.0.4",
     "typescript": "^4.5.4"
   }
 }
