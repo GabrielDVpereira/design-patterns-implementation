@@ -1,8 +1,5 @@
 import { EmailValidator } from "../adapter/validator";
-
-export interface Validator { 
-    execute(data: any): boolean;    
-}
+import { Validator } from "./protocols";
 
 export class EmailValidation implements Validator {
     constructor(

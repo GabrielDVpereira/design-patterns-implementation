@@ -1,14 +1,6 @@
 import * as validator from 'email-validator'; 
+import { HttpRequest, HttpResponse } from './protocols';
 
-interface HttpRequest {
-    body?: any; 
-    headers?: any; 
-}
-
-export type HttpResponse = {
-    statusCode: number
-    body: any
-  }
 
 class LoginController {
     handle(httpRequest: HttpRequest): HttpResponse{

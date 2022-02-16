@@ -1,15 +1,7 @@
 import { EmailValidatorAdapter } from "../adapter/emailValidator";
-import { CompareFieldsValdiation, EmailValidation, LengthValidation, RequiredFieldValidation, ValidationComposite, Validator } from "./ultimate";
+import { CompareFieldsValdiation, EmailValidation, LengthValidation, RequiredFieldValidation, ValidationComposite } from "./ultimate";
+import { HttpRequest, HttpResponse, Validator } from './protocols';
 
-interface HttpRequest {
-    body?: any; 
-    headers?: any; 
-}
-
-export type HttpResponse = {
-    statusCode: number
-    body: any
-  }
 
 class LoginController {
     constructor(private readonly validator: Validator){}
