@@ -14,6 +14,7 @@
     "build": "tsc --outDir build"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "email-validator": "^2.0.4",
     "typescript": "^4.5.4"
   }
