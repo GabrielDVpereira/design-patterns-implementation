@@ -8,7 +8,7 @@ export class LoginController implements Controller{
 }
 
 
-export class SignupController {
+export class SignupController implements Controller{
     handle(httpRequest: HttpRequest): HttpResponse {
         // Signup logic stuff
         return { statusCode: 200, body: 'sucess' }
