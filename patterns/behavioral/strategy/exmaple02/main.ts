@@ -1,8 +1,8 @@
 import { MOCKED_ITEMS } from "./constants/items";
 import { NEW_CUSTOMER, NORMAL_CUSTOMER, PREMIUM_CUSTOMER } from './constants/customers'
 import { CHRISTMAS_CUPOM } from "./constants/christmasCupom";
-import { ShoppingCart } from "./shoppingCarts/normal";
-import { ShoppingCartWithStrategy } from "./shoppingCarts/good";
+import { ShoppingCart } from "./shoppingCarts/cart01";
+import { ShoppingCartWithStrategy } from "./shoppingCarts/cart02";
 
 
 /** NORMAL */
