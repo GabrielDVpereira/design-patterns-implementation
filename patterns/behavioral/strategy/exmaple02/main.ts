@@ -1,7 +1,7 @@
 import { MOCKED_ITEMS } from "./constants/items";
 import { NEW_CUSTOMER, NORMAL_CUSTOMER, PREMIUM_CUSTOMER } from './constants/customers'
 import { CHRISTMAS_COUPON } from "./constants/christmasCoupon";
-import { ShoppingCart } from "./shoppingCarts/cart";
+import { ShoppingCart } from "./cart";
 import { Item } from "./types/item";
 import { Customer } from "./types/client";
 import { Coupon } from "./types/coupon";

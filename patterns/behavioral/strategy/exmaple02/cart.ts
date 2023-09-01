@@ -1,7 +1,7 @@
-import { Cart } from "../types/cart";
-import { Customer } from "../types/client";
-import { Coupon } from "../types/coupon";
-import { Item } from "../types/item";
+import { Cart } from "./types/cart";
+import { Customer } from "./types/client";
+import { Coupon } from "./types/coupon";
+import { Item } from "./types/item";
 
 export class ShoppingCart implements Cart {
     constructor(
