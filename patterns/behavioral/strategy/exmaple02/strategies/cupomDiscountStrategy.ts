@@ -1,4 +1,4 @@
-import { Cupom } from "../types/cupom";
+import { Coupon } from "../types/coupon";
 import { DiscountStrategy } from "../types/discountStategy";
 
 /**
@@ -7,11 +7,11 @@ import { DiscountStrategy } from "../types/discountStategy";
  */
 
 export class CupomDiscountStrategy implements DiscountStrategy {
-    constructor(private readonly cupom: Cupom){}
+    constructor(private readonly coupon: Coupon){}
 
     applyDiscount(value: number): number {
-        if(value >= this.cupom.minValue){
-            return value * this.cupom.percentage; 
+        if(value >= this.coupon.minValue){
+            return value * value - this.coupon.percentage; 
         }    
         return value;
     }

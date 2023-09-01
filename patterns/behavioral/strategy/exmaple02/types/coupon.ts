@@ -1,4 +1,4 @@
-export interface Cupom {
+export interface Coupon {
     percentage: number; 
     minValue: number;
 }
