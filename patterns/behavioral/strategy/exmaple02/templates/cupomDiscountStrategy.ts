@@ -10,9 +10,6 @@ export class CupomDiscountStrategy implements DiscountStrategy {
     constructor(private readonly coupon: Coupon){}
 
     applyDiscount(value: number): number {
-        if(value >= this.coupon.minValue){
-            return value * value - this.coupon.percentage; 
-        }    
         return value;
     }
 }

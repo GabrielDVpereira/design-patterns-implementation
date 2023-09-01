@@ -14,9 +14,6 @@ const MAX_DISCOUNT = 0.2;
 
 export class PremiumCustomerDiscountStategy implements DiscountStrategy {
     applyDiscount(value: number): number {
-        if(value >= 150) return value - value * MAX_DISCOUNT;
-        if(value >= 100) return value  - value * NORMAL_DISCOUNT;
-        if(value >= 50) return value  - value * MIN_DISCOUNT;
         return value;
     }
 }

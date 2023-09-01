@@ -8,6 +8,6 @@ const NEW_CUSTOMER_DISCOUNT = 0.1;
 
 export class NewCustomerDiscountStrategy implements DiscountStrategy{
     applyDiscount(value: number): number {
-        return value - value * NEW_CUSTOMER_DISCOUNT;
+        return value;
     }
 }
