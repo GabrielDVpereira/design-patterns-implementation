@@ -20,7 +20,7 @@ import { Cart } from "./types/cart";
  *      - discount varies according to the coupon, and it's applied to a minimum total
  */
 
-class Client {
+class ShoppingClient {
 
     constructor(
         private readonly customer: Customer,
@@ -41,7 +41,7 @@ class Client {
 }
 
 
-const client = new Client(NEW_CUSTOMER, MOCKED_ITEMS, CHRISTMAS_COUPON); 
+const client = new ShoppingClient(NEW_CUSTOMER, MOCKED_ITEMS, CHRISTMAS_COUPON); 
 
 /** Customer shops */
 client.shop()

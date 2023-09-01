@@ -13,10 +13,8 @@ export class ShoppingCart implements Cart {
     calculateTotal(): number {
         let total = this.items.reduce((acc, item) => item.price + acc, 0)
 
-        if(this.coupon){
-            if(total >= this.coupon.minValue){
-                return total - total * this.coupon.percentage; 
-            }
+        if(this.coupon && total >= this.coupon.minValue){
+            return total - total * this.coupon.percentage; 
         } else if(this.customer.type === 'premium_customer'){
             if(total >= 150) return (total - total * 0.2);
             if(total >= 100) return (total - total * 0.1);
